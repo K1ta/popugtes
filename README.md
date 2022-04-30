@@ -1,6 +1,17 @@
 # Awesome Task Exchange System (aTES) для UberPopug Inc
 Это учебный проект.
 
+## Разбор требований
+
+Возможные действия в системе:
+
+| Требование | Актор | Команда | Событие | Данные |
+| --- | --- | --- | --- | --- |
+| Создание таски | Юзер | Create | task.Assigned | Task id, assignee, price |
+| Реассигн | Менеджер | Reassign | task.Assigned | Task id, assignee, price |
+| Финиш таски | Разработчик | Finish | task.Finished | Task id |
+| Зарплата разработчику | Billing service | Salary | - | User id |
+
 ## Модель данных
 
 Я выделил в системе три основные модели: 
